@@ -1,0 +1,32 @@
+# YOLO configuration for MRI tumor detection
+path: data/yolo_merged
+train: train/images
+val: val/images
+
+# Classes
+names:
+  0: glioma
+  1: meningioma
+  2: no_tumor
+  3: pituitary
+
+nc: 4
+
+# Training parameters (can be overridden by command line)
+args:
+  epochs: 50
+  imgsz: 512
+  batch: 16
+  lr0: 0.001
+  optimizer: AdamW
+  weight_decay: 0.0005
+  warmup_epochs: 3
+  warmup_momentum: 0.8
+  
+  # Medical-specific augmentations
+  hsv_h: 0.01
+  hsv_s: 0.3
+  hsv_v: 0.2
+  fliplr: 0.5
+  degrees: 5
+  mosaic: 0.5
