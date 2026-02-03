@@ -1,8 +1,5 @@
 # Brain Tumor Detection in MRI — CV and portfolio text
 
-Repository: https://github.com/mksl49/brain-tumor-detection-MRI
-Period: January – February 2026
-
 ## GitHub "About" line
 
 Comparative study of YOLOv8, Faster R-CNN, and DETR for brain tumor detection in MRI — unified data pipeline, COCO evaluation, and multi-model inference.
